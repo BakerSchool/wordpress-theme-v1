@@ -1,21 +1,15 @@
-#  HTML5 Reset WordPress Theme
+#  Custom Theme based on HTML5 Reset WordPress Theme
 
-HTML5 Reset is a simple set of *WordPress* best practices to get web projects off on the right foot.
+## Gulp Node Modules
 
-## Some of the features:
-
-1. A style sheet designed to strip initial styles from browsers, starting your development off with a blank slate.
-2. Easy to customize — remove whatever you don't need, keep what you do.
-3. Google Analytics and jQuery calls
-4. Meta tags ready for population
-5. Empty print and small-screen media queries
-6. Modernizr.js [http://www.modernizr.com/](http://www.modernizr.com/) enables HTML5 compatibility with IE (and a dozen other great features)
-7. [Prefix-free.js](http://leaverou.github.io/prefixfree/) allowing us to only use un-prefixed styles in our CSS
-8. IE-specific classes for simple CSS-targeting
-9. Google's Chrome Frame prompt for IE6 users
-10. iPhone/iPad/iTouch icon snippets, plus social/app meta tags for Twitter, Facebook, Windows 8
-11. Lots of other keen stuff
-
-## Get the plain HTML theme:
-
-https://github.com/murtaugh/HTML5-Reset
+1. browser-sync
+2. gulp-autoprefixer
+3. gulp-concat
+4. gulp-imagemin
+5. gulp-jshint
+6. gulp-minify-css
+7. gulp-newer
+8. gulp-rename
+9. gulp-ruby-sass
+10. gulp-sourcemaps
+11. gulp-uglify
