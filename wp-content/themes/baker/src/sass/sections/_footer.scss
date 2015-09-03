@@ -1,0 +1,50 @@
+
+.footer {
+  background: $blue;
+  border-top: 4px solid $red;
+  color: #fff;
+  text-align: center;
+}
+
+.footer .wrapper {
+  padding: $base 0;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer-nav {
+  margin-bottom: $base;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.footer-nav a {
+  color: #fff;
+}
+
+.footer-contact,
+.footer-sub-co {
+  @include font-size(13px);
+  margin-bottom: $base;
+}
+
+.footer .bullet,
+.footer .pipe {
+  @include bp-max-width($small) {
+    display: none;
+  }
+}
+
+.footer-address,
+.footer-phone,
+.footer-fax,
+.footer-credit {
+  @include bp-max-width($small) {
+    display: block;
+  }
+}

@@ -1,0 +1,22 @@
+
+.hero {
+  @include bp-min-width($large) {
+    margin-bottom: $base*2;
+  }
+}
+
+.hero .wrapper {
+  @include bp-max-width($large) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.hero h1,
+.hero p {
+  color: #fff;
+}
+
+.hero h1 {
+  max-width: 900px;
+}

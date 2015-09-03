@@ -1,0 +1,20 @@
+
+.header {
+  @include cf;
+  padding: 12px 0;
+  background: $blue;
+  border-bottom: 4px solid $red;
+}
+
+.logo {
+  width: 120px;
+  margin: 0 auto;
+
+  @include bp-max-width($large) {
+    float: left;
+  }
+
+  @include bp-min-width($large) {
+    width: 200px;
+  }
+}

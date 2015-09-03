@@ -1,0 +1,58 @@
+
+a {
+  @include global-transition(0.15s);
+	color: $blue;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+@mixin btn {
+  @include font-size(16px);
+  display: inline-block;
+  padding: 0.5em 1em 0.6em;
+  color: #fff;
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin btn-blue {
+  background: $blue;
+
+  &:hover {
+    background: $lt-blue;
+  }
+}
+
+@mixin btn-red {
+  background: $red;
+
+  &:hover {
+    background: $dk-red;
+  }
+}
+
+.btn {
+  @include btn;
+
+  &.red {
+    background: $red;
+
+    &:hover {
+    }
+  }
+}
+
+.cta-link {
+  @include font-size(18px);
+
+  .icon-next {
+    width: 8px;
+    height: 18px;
+    margin-left: 6px;
+    fill: $blue;
+    vertical-align: middle;
+  }
+}

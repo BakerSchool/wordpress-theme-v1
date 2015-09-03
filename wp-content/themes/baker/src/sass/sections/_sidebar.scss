@@ -1,0 +1,23 @@
+
+.sidebar-left .widget {
+  padding: 20px 20px $base;
+  background: $red;
+  color: #fff;
+}
+
+.sidebar-left .widget:not(:last-child) {
+  margin-bottom: $base;
+}
+
+.sidebar-left .widget p {
+  @include font-size(13px);
+  @include line-height(20px)
+}
+
+.sidebar-left .widget a {
+  color: #fff;
+
+  &:hover {
+    color: $lt-grey;
+  }
+}

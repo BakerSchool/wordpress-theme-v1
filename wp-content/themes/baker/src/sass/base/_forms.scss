@@ -1,0 +1,202 @@
+
+div.wpcf7 {
+  @include width-6-col;
+}
+
+.form-item {
+  width: 100%;
+  margin-bottom: $base;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+label {
+  @include font-size(17px);
+  display: block;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  @include font-size(17px);
+  width: 100%;
+  padding: 10px 14px;
+  background: none;
+  border: 1px solid $md-grey;
+  box-shadow: none;
+  color: $dk-grey;
+  font-family: $sans;
+
+  &.error {
+    border-color: $red;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  max-width: 420px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  overflow: auto;
+  width: 100%;
+  max-width: 584px;
+  height: $base*4;
+  resize: none;
+
+  @include bp-min-width($medium) {
+    height: $base*6;
+  }
+}
+
+
+/** Select ============**/
+
+.form-select {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid $blue;
+  }
+
+  select {
+    appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    border-radius: 0;
+  }
+}
+
+/** Checkboxes ============**/
+
+.form-checkbox {
+  position: relative;
+
+  input {
+    opacity: 0;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.form-checkbox label {
+  padding-left: 40px;
+  margin-bottom: 0;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 1px solid $lt-grey;
+  }
+
+  .description {
+    display: block;
+    color: $grey;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+
+.form-checkbox input[type="checkbox"]:checked + label:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
+
+.checkboxes input {
+  opacity: 0;
+  float: left;
+  width: 20px;
+}
+
+
+/** Radio ============**/
+
+.form-radio {
+  display: inline-block;
+  margin-right: 24px;
+  padding-top: 8px;
+
+  label, input {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  label {
+    @include font-size(36px);
+    color: #fff;
+  }
+
+  input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    border: 1px solid $grey;
+  }
+
+  input:checked {
+    outline: none;
+/*     background: $radio-check no-repeat 2px 2.5px; */
+  }
+}
+
+
+/** Buttons ============**/
+
+.ninja-forms-form-wrap input[type="submit"] {
+  @include btn;
+	min-width: 120px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+/** Errors / Success ============**/
+
+.ninja-forms-required-items,
+.ninja-forms-req-symbol {
+  display: none;
+}
+
+.ninja-forms-error-msg {
+  margin-bottom: $base;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid $red;
+  color: $red;
+  text-align: left;
+}
+
+.ninja-forms-field-error p {
+  @include font-size(13px);
+  color: $red;
+}

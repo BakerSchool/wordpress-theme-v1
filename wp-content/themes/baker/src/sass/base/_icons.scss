@@ -1,0 +1,37 @@
+
+svg {
+  @include global-transition(0.1s);
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+[class^="icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+[class^="icon-circle-"], .share-icon {
+  width: 24px;
+  height: 24px;
+  fill: $blue;
+}
+
+.icon-mail {
+  width: 22px;
+  height: 22px;
+  fill: $blue;
+}
+
+.icon-phone {
+  width: 22px;
+  height: 22px;
+  fill: $blue;
+}
+
+.icon-fax {
+  width: 22px;
+  height: 22px;
+  fill: $blue;
+}

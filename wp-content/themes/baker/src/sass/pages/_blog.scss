@@ -1,0 +1,42 @@
+
+.blog .post:not(:last-child) {
+  margin-bottom: $base;
+  padding-bottom: $base;
+  border-bottom: 1px solid $md-grey;
+}
+
+.post-title {
+  margin-bottom: 12px;
+}
+
+.post-date {
+  @include font-size(13px);
+}
+
+.post-share {
+  @include cf;
+  margin-bottom: $base;
+  padding: 6px 0;
+  border-top: 1px solid $lt-grey;
+  border-bottom: 1px solid $lt-grey;
+}
+
+.post-share a {
+  display: block;
+  float: left;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.posts-nav {
+  @include cf;
+  color: $md-grey;
+}
+
+.nav-prev {
+  float: left;
+}
+
+.nav-next {
+  float: right;
+}
