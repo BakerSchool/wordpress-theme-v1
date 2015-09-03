@@ -27,24 +27,17 @@
   color: #fff;
 }
 
-.footer-contact,
-.footer-sub-co {
-  @include font-size(13px);
-  margin-bottom: $base;
+.footer-social {
+  padding-top: $base;
 }
 
-.footer .bullet,
-.footer .pipe {
-  @include bp-max-width($small) {
-    display: none;
-  }
+.footer-social a {
+  display: inline-block;
+  margin: 0 8px;
 }
 
-.footer-address,
-.footer-phone,
-.footer-fax,
-.footer-credit {
-  @include bp-max-width($small) {
-    display: block;
-  }
+.footer-social .social-icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
 }

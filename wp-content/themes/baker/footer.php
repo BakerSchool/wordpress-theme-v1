@@ -9,22 +9,22 @@
         <?php dynamic_sidebar('Footer'); ?>
 
         <div class="footer-social">
-          <a href="" target="_blank">
+          <a href="https://www.facebook.com/bakerdemschool" target="_blank">
             <svg class="social-icon" viewBox="0 0 40 40">
               <use xlink:href="#icon-circle-facebook"></use>
             </svg>
           </a>
-          <a href="" target="_blank">
+          <a href="http://twitter.com/BakerDemSchool" target="_blank">
             <svg class="social-icon" viewBox="0 0 40 40">
               <use xlink:href="#icon-circle-twitter"></use>
             </svg>
           </a>
-          <a href="" target="_blank">
+          <a href="https://instagram.com/bakerdemschool/" target="_blank">
             <svg class="social-icon" viewBox="0 0 40 40">
               <use xlink:href="#icon-circle-instagram"></use>
             </svg>
           </a>
-        </div>]
+        </div>
 
       </div>
     </footer>
