@@ -1,10 +1,18 @@
 
 a {
-  @include global-transition(0.15s);
+  @include global-transition(0.1s);
 	color: $blue;
 
   &:hover {
     color: $red;
+  }
+}
+
+.body a {
+  border-bottom: 1px solid $blue;
+
+  &:hover {
+    border-bottom: 1px solid #fff;
   }
 }
 

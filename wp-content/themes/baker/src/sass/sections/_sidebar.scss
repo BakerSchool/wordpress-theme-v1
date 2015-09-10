@@ -16,8 +16,18 @@
 
 .sidebar-left .widget a {
   color: #fff;
+  border-bottom: 1px solid #fff;
 
   &:hover {
     color: $lt-grey;
+    border-bottom: 1px solid $red;
   }
+}
+
+.widget_recent_entries li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.widget_recent_entries .post-date {
+  display: block;
 }

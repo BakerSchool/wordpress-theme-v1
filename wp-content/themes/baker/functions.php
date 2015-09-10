@@ -64,8 +64,6 @@
 	add_filter( 'wp_title', 'baker_wp_title', 10, 2 );
 
 
-//OLD STUFF BELOW
-
 	// Load jQuery
 	if ( !function_exists( 'core_mods' ) ) {
 		function core_mods() {
