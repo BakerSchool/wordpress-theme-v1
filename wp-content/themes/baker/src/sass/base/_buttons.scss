@@ -12,7 +12,7 @@ a {
   border-bottom: 1px solid $blue;
 
   &:hover {
-    border-bottom: 1px solid #fff;
+    border-color: #fff;
   }
 }
 
@@ -20,47 +20,22 @@ a {
   @include font-size(16px);
   display: inline-block;
   padding: 0.5em 1em 0.6em;
+  background: $red;
   color: #fff;
   font-weight: $bold;
   text-transform: uppercase;
   text-align: center;
-}
-
-@mixin btn-blue {
-  background: $blue;
 
   &:hover {
-    background: $lt-blue;
-  }
-}
-
-@mixin btn-red {
-  background: $red;
-
-  &:hover {
-    background: $dk-red;
+    background: $blue;
+    color: #fff;
   }
 }
 
 .btn {
   @include btn;
-
-  &.red {
-    background: $red;
-
-    &:hover {
-    }
-  }
 }
 
-.cta-link {
-  @include font-size(18px);
-
-  .icon-next {
-    width: 8px;
-    height: 18px;
-    margin-left: 6px;
-    fill: $blue;
-    vertical-align: middle;
-  }
+.body .btn {
+  border-bottom: none;
 }
