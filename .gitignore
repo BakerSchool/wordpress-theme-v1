@@ -88,5 +88,6 @@ node_modules/
 # Favicon
 !favicon.png
 
-# Ingore dev site directory
+# Ingore dev and blog directory
 dev/
+blog/
