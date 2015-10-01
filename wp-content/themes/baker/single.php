@@ -11,12 +11,12 @@
     			<h1 class="post-title"><?php the_title(); ?></h1>
     			<div class="post-content">
             <div class="post-share">
-              <a href="http://www.facebook.com/sharer/sharer.php?u=http://bakerdemschool.org/<?php echo get_permalink(); ?>" target="_blank">
+              <a href="http://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>" target="_blank">
                 <svg class="share-icon" viewBox="0 0 40 40">
                   <use xlink:href="#icon-circle-facebook"></use>
                 </svg>
               </a>
-              <a href="http://twitter.com/share?text=Baker Demonstration School - <?php the_title(); ?>" target="_blank">
+              <a href="http://twitter.com/share?text=Baker Demonstration School - <?php the_title(); ?>&url=<?php echo get_permalink(); ?>" target="_blank">
                 <svg class="share-icon" viewBox="0 0 40 40">
                   <use xlink:href="#icon-circle-twitter"></use>
                 </svg>
