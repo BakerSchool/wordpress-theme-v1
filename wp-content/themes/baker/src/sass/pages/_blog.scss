@@ -30,6 +30,7 @@
 
 .posts-nav {
   @include cf;
+  padding-top: $base;
   color: $md-grey;
 }
 
