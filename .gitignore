@@ -56,14 +56,13 @@ Thumbs.db
 # "themes" directory
 wp-content/*
 !wp-content/mu-plugins/
-!wp-content/plugins/
 !wp-content/themes/
 
 # ADVANCED OPTION (disabled by default)
 # ignore everything in the "plugins" directory,
 # except the plugins you specify
-#wp-content/plugins/*
 #!wp-content/plugins/stop-emails/
+wp-content/plugins/
 
 # ADVANCED OPTION (disabled by default)
 # ignore everything in the "themes" directory,
