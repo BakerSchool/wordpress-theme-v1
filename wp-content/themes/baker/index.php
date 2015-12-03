@@ -15,22 +15,21 @@
               echo '<article class="post">';
             }
           ?>
-
-		        <p class="post-date"><?php the_date('M j, Y'); ?></p>
-		        <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <div class="post-excerpt">
-              <?php the_excerpt(); ?>
-            </div>
-    	      </article>
+	        <p class="post-date"><?php the_date('M j, Y'); ?></p>
+	        <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+          <div class="post-excerpt">
+            <?php the_excerpt(); ?>
+          </div>
+  	      </article>
   	     <?php endwhile; endif; ?>
 
         <?php post_navigation(); ?>
+
     	</section>
 
       <?php get_sidebar(); ?>
 
     </div>
   </section>
-
 
 <?php get_footer(); ?>

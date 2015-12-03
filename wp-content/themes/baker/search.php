@@ -1,43 +1,40 @@
-<?php
-/**
- * @package WordPress
- * @subpackage HTML5-Reset-WordPress-Theme
- * @since HTML5 Reset 2.0
- */
- get_header(); ?>
+<?php get_header(); ?>
 
-	<?php if (have_posts()) : ?>
+  <section class="main">
+    <div class="wrapper">
 
-		<h2><?php _e('Search Results','html5reset'); ?></h2>
+      <section id="page-content" class="page-content">
+			<?php if (have_posts()) : ?>
 
-		<?php post_navigation(); ?>
+				<h1 class="page-title">Search Results</h1>
 
-		<?php while (have_posts()) : the_post(); ?>
+				<?php while (have_posts()) : the_post(); ?>
 
-			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+					<article class="post">
+            <p class="post-date"><?php the_date('M j, Y'); ?></p>
+            <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <div class="post-excerpt">
+              <?php the_excerpt(); ?>
+            </div>
+    				<div class="post-tags">
+      				<?php the_tags( __('<span class="label">Tags:</span> ','html5reset'), ', ', ''); ?>
+    				</div>
+					</article>
 
-				<h2><?php the_title(); ?></h2>
+				<?php endwhile; ?>
 
-				<?php posted_on(); ?>
+				<?php post_navigation(); ?>
 
-				<div class="entry">
+			<?php else : ?>
 
-					<?php the_excerpt(); ?>
+				<h2><?php _e('Nothing Found','html5reset'); ?></h2>
 
-				</div>
+			<?php endif; ?>
+			</section>
 
-			</article>
+			<?php get_sidebar(); ?>
 
-		<?php endwhile; ?>
-
-		<?php post_navigation(); ?>
-
-	<?php else : ?>
-
-		<h2><?php _e('Nothing Found','html5reset'); ?></h2>
-
-	<?php endif; ?>
-
-<?php get_sidebar(); ?>
+		</div>
+	</section>
 
 <?php get_footer(); ?>

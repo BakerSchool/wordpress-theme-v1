@@ -1,5 +1,8 @@
 
-.blog .post:not(:last-child) {
+.blog .post:not(:last-child),
+.category .post:not(:last-child),
+.tag .post:not(:last-child),
+.search-results .post:not(:last-child) {
   margin-bottom: $base;
   padding-bottom: $base;
   border-bottom: 1px solid $md-grey;
@@ -34,10 +37,17 @@
   color: $md-grey;
 }
 
+.post-tags {
+  @include font-size(13px);
+  padding-top: 12px;
+}
+
+.posts-nav .nav-item:first-child,
 .nav-prev {
   float: left;
 }
 
+.posts-nav .nav-item:last-child,
 .nav-next {
   float: right;
 }

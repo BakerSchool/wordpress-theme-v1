@@ -13,13 +13,13 @@ get_header(); ?>
   		<ul>
   			<?php wp_get_archives('type=monthly'); ?>
   		</ul>
-  		
+
   		<h3>Archives by Subject</h3>
   		<ul>
   			 <?php wp_list_categories(); ?>
   		</ul>
 
-		</div>  
+		</div>
   </section>
 
 <?php get_footer(); ?>
